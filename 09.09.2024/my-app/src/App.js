@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Name from "./components/Name";
+import Counter from './components/Counter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Name title="Kris" />
+      <Name />
+      <Counter />
+    </>
+  )
+
+  /* {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 80,
+    "singleQuote": false,
+    "jsxSingleQuote": false,
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "trailingComma": "all",
+    "arrowParens": "avoid",
+    "singleAttributePerLine": true
+  } */
 }
 
 export default App;
