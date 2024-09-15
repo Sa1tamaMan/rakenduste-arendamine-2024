@@ -10,7 +10,8 @@ const Counter = () => {
         <>
             <h1>{counter}</h1>
             {[-19, -5, -2, 1, 3, 7, 11, 100].map(element => {
-                return <button onClick = {() => modifyCounter(element)}>{element}</button>
+                const displayElement = element > 0 ? `+${element}` : element;
+                return <button onClick = {() => modifyCounter(element)}>{displayElement}</button>
             })}
             
         </>
